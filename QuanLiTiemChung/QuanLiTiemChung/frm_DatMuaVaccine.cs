@@ -72,7 +72,7 @@ namespace QuanLiTiemChung
         {
             foreach (DataGridViewRow row in ChonVaccine_table.Rows)
             {
-                if (row.Cells["Số thứ tự"].Value !  = null)
+                if (row.Cells["Số thứ tự"].Value != null)
                 {
 
                 row.Cells["Số thứ tự"].Value = row.Index + 1;
