@@ -200,7 +200,6 @@ namespace QuanLiTiemChung
             this.Controls.Add(this.btnDangKy);
             this.Name = "frmDangKyTiemChung";
             this.Text = "DangKyTiemChung";
-            this.Load += new System.EventHandler(this.frmDangKyTiemChung_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
