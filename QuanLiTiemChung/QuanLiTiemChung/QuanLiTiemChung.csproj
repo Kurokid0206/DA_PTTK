@@ -114,6 +114,12 @@
     <Compile Include="frmXemLich.Designer.cs">
       <DependentUpon>frmXemLich.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXemLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemLich.Designer.cs">
+      <DependentUpon>frmXemLich.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_DatMuaVaccine.cs">
       <SubType>Form</SubType>
     </Compile>
