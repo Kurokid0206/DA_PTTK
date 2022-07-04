@@ -38,6 +38,7 @@ namespace QuanLiTiemChung
             this.label2 = new System.Windows.Forms.Label();
             this.Chon_SL_input = new System.Windows.Forms.NumericUpDown();
             this.ThemMoiVaccine_btn = new System.Windows.Forms.Button();
+            this.DatMuaVaccine_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ChonVaccine_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Chon_SL_input)).BeginInit();
             this.SuspendLayout();
@@ -125,12 +126,23 @@ namespace QuanLiTiemChung
             this.ThemMoiVaccine_btn.TabIndex = 12;
             this.ThemMoiVaccine_btn.Text = "Thêm mới vaccine";
             this.ThemMoiVaccine_btn.UseVisualStyleBackColor = true;
+            this.ThemMoiVaccine_btn.Click += new System.EventHandler(this.ThemMoiVaccine_btn_Click);
+            // 
+            // DatMuaVaccine_btn
+            // 
+            this.DatMuaVaccine_btn.Location = new System.Drawing.Point(426, 469);
+            this.DatMuaVaccine_btn.Name = "DatMuaVaccine_btn";
+            this.DatMuaVaccine_btn.Size = new System.Drawing.Size(259, 44);
+            this.DatMuaVaccine_btn.TabIndex = 13;
+            this.DatMuaVaccine_btn.Text = "Đặt Mua";
+            this.DatMuaVaccine_btn.UseVisualStyleBackColor = true;
             // 
             // frm_DatMuaVaccine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1365, 611);
+            this.Controls.Add(this.DatMuaVaccine_btn);
             this.Controls.Add(this.ThemMoiVaccine_btn);
             this.Controls.Add(this.Chon_SL_input);
             this.Controls.Add(this.label2);
@@ -162,5 +174,6 @@ namespace QuanLiTiemChung
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown Chon_SL_input;
         private System.Windows.Forms.Button ThemMoiVaccine_btn;
+        private System.Windows.Forms.Button DatMuaVaccine_btn;
     }
 }

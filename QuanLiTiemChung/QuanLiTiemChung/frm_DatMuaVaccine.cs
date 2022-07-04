@@ -116,5 +116,16 @@ namespace QuanLiTiemChung
                 reload_STT_gridView();
             }
         }
+
+        private void ThemMoiVaccine_btn_Click(object sender, EventArgs e)
+        {
+            frm_ThemMoiVaccine frm_ThemMoiVaccine = new frm_ThemMoiVaccine();
+            frm_ThemMoiVaccine.Show();
+            frm_ThemMoiVaccine.Closed += (s, args) => {
+                this.Show();
+                reloadload_combobox_chonVaccine();
+            };
+            this.Hide();
+        }
     }
 }
