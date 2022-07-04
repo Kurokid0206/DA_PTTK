@@ -12,8 +12,9 @@ namespace QuanLiTiemChung
 {
     class Vaccine_DB_19120640
     {
-        public static void getAllvaccine(Dictionary<string,string> list_VX)
+        public static Dictionary<string, string> getAllvaccine()
         {
+            Dictionary<string, string> list_VX = new Dictionary<string, string>();
             MySqlConnection conn = DBUtils.GetDBConnection();
             conn.Open();
             MySqlDataAdapter da = new MySqlDataAdapter();
@@ -44,6 +45,7 @@ namespace QuanLiTiemChung
                 conn.Close();
                 conn.Dispose();
             }
+            return list_VX;
         }
     }
 }

@@ -45,8 +45,8 @@ namespace QuanLiTiemChung
         private void reloadload_combobox_chonVaccine()
             //tải lại combobox mỗi khi thay đổi
         {
-            
-            Vaccine_DB_19120640.getAllvaccine(list_VX_unselected);
+
+            Vaccine_19120640.Lay_thong_tin_Vaccine(list_VX_unselected);
             ChonVaccine_cbb.Items.Clear();
             //đọc từ dữ liệu db
             foreach (KeyValuePair<string, string> vaccine in list_VX_unselected)
