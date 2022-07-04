@@ -17,9 +17,5 @@ namespace QuanLiTiemChung
             InitializeComponent();
         }
 
-        private void frm_DatMuaVaccine_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
