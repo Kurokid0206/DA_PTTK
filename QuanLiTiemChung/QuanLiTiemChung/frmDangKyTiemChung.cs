@@ -37,13 +37,20 @@ namespace QuanLiTiemChung
         private void frmDangKyTiemChung_Load(object sender, EventArgs e)
         {
             KhachHang kh = new KhachHang();
-            kh.LayThongTin("KH001");
+            kh.LayThongTin("KH002");
             txtHoTen.Text = kh.TenKH;
             date_ngaySinh.Value = kh.NgaySinh;
             txtDiaChi.Text = kh.DiaChi;
             txtCMND.Text = kh.CMND;
             txtSDT.Text = kh.SDT;
-            checkGioiTinh.Checked = kh.GioiTinh;
+            if (kh.GioiTinh == true)
+            { checkNam.Checked = true; }
+            else
+            {
+                checkNu.Checked = true;
+
+            }
+
 
         }
     }

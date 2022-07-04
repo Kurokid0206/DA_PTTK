@@ -35,13 +35,9 @@ namespace QuanLiTiemChung
                 da.SelectCommand = cmd;
                 da.Fill(dt);
                 TenKH = dt.Rows[0]["HoTenKH"].ToString();
-
                 MaKH = dt.Rows[0]["MaKH"].ToString();
-
                 NgaySinh = DateTime.ParseExact(dt.Rows[0]["niceDate"].ToString(), "dd/MM/yyyy", null);
-
-                GioiTinh = dt.Rows[0]["GioiTinh"].ToString()!="0"?true:false;
-                
+                GioiTinh = dt.Rows[0]["GioiTinh"].ToString()== "True" ? true:false;
                 SDT = dt.Rows[0]["SDT"].ToString();
                 DiaChi = dt.Rows[0]["DiaChi"].ToString();
                 CMND = dt.Rows[0]["CMND"].ToString();

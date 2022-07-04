@@ -24,7 +24,6 @@ namespace QuanLiTiemChung
 
         private void frmDangKyVacXin_Load(object sender, EventArgs e)
         {
-            KhachHang.LayThongTin("KH00000000");
 
             lstDSGoiTiem.DataSource = GoiTiem.DocDSGoiTiem();
             lstDSGoiTiem.ValueMember = "MaGT";
@@ -107,36 +106,10 @@ namespace QuanLiTiemChung
 
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
-            
-            HoaDon hd = new HoaDon(data,"MH");
+
             frmTT1_Main frm = new frmTT1_Main();
             frm.Show();
-        }
-
-        private void bt_laphoadon_Click(object sender, EventArgs e)
-        {
-            if (gv_DSChon.DataSource is null)
-            {
-                MessageBox.Show("Chọn Vắc xin nhé!");
-                return;
-            }
-            frmTT3_LapHoaDon thanhtoan = new frmTT3_LapHoaDon();
-            thanhtoan.LoadData(data,"MH");
-
-
-            //this.Visible = false;
-            thanhtoan.Show();
-            //this.Visible = true;
-        }
-
-        private void bt_DangXuat_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void bt_huy_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            //this.Hide();
         }
     }
 }
