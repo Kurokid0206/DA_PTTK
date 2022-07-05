@@ -46,7 +46,7 @@ namespace QuanLiTiemChung
             //tải lại combobox mỗi khi thay đổi
         {
 
-            list_VX_unselected = Vaccine_19120640.Lay_thong_tin_Vaccine();
+            Vaccine_19120640.Lay_thong_tin_Vaccine(list_VX_unselected);
             ChonVaccine_cbb.Items.Clear();
             //đọc từ dữ liệu db
             foreach (KeyValuePair<string, string> vaccine in list_VX_unselected)

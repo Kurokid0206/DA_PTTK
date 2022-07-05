@@ -13,9 +13,9 @@ namespace QuanLiTiemChung
         public string NSX;
         public DateTime HSD;
         Vaccine_DB_19120640 vaccine_DB = new Vaccine_DB_19120640();
-        public static Dictionary<string, string> Lay_thong_tin_Vaccine()
+        public static void Lay_thong_tin_Vaccine(Dictionary<string, string> list_VX)
         {
-            return Vaccine_DB_19120640.getAllvaccine();
+            list_VX = Vaccine_DB_19120640.getAllvaccine();
         }
     }
 }
