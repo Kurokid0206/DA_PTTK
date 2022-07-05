@@ -11,13 +11,13 @@ namespace QuanLiTiemChung
 {
     class KhachHang
     {
-        public string MaKH;
-        public string TenKH;
-        public DateTime NgaySinh;
-        public Boolean GioiTinh;
-        public string SDT;
-        public string DiaChi;
-        public string CMND;
+        public static string MaKH;
+        public static string TenKH;
+        public static DateTime NgaySinh;
+        public static Boolean GioiTinh;
+        public static string SDT;
+        public static string DiaChi;
+        public static string CMND;
 
         public void LayThongTin(string MaKH) {
             MySqlConnection conn = DBUtils.GetDBConnection();
