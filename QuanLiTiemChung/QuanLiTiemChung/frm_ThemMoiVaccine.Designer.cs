@@ -167,9 +167,9 @@ namespace QuanLiTiemChung
             this.lb_thanhtoandonhang.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lb_thanhtoandonhang.Location = new System.Drawing.Point(300, 11);
             this.lb_thanhtoandonhang.Name = "lb_thanhtoandonhang";
-            this.lb_thanhtoandonhang.Size = new System.Drawing.Size(324, 41);
+            this.lb_thanhtoandonhang.Size = new System.Drawing.Size(314, 41);
             this.lb_thanhtoandonhang.TabIndex = 4;
-            this.lb_thanhtoandonhang.Text = "THÊM MỚI HÓA ĐƠN";
+            this.lb_thanhtoandonhang.Text = "THÊM MỚI VACCINE";
             // 
             // panel_main
             // 
